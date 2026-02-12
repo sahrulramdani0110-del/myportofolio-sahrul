@@ -1,0 +1,268 @@
+/* Reset dan gaya dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f7;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #2c3e50, #4a6491);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-size: 3rem;
+    MARGIN-BOTTOM: 0.5REM;
+    text-shadow: none;
+}
+    header name {
+    display: block;
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #dfe6ed;
+
+ }
+
+
+/* Navigasi */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+
+
+/* Bagian konten */
+section {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #2c3e50;
+    border-bottom: 3px solid #4a6491;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* Tentang Saya */
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Proyek */
+#projects ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#projects li {
+    background-color: #f8f9fa;
+    margin: 1rem 0;
+    padding: 1.2rem 1.5rem;
+    border-left: 5px solid #4a6491;
+    border-radius: 0 5px 5px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#projects li:nth-child(2) {
+    border-left-color: #3498db;
+}
+
+#projects li:nth-child(3) {
+    border-left-color: #2ecc71;
+}
+
+/* Kontak */
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    border-bottom: none;
+    margin-bottom: 2rem;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#skill {
+    margin-bottom: 2rem;
+}
+
+#skill ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+    color: #555;
+}
+
+#skill li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+#experience ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #555;
+}
+
+#experience li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact h2 {
+    border-bottom: none;
+    margin-bottom: 2rem;
+}
+
+.email-display {
+    font-size: 1.2rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    display: none;
+    color: #2c3e50;
+    font-weight: 600;
+    border: 1px dashed #4a6491;
+}
+
+/* Tombol */
+button {
+    background: linear-gradient(to right, #4a6491, #3498db);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(52, 152, 219, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Responsif untuk tablet */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    section {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+    
+    #projects li {
+        padding: 1rem;
+    }
+}
+
+/* Responsif untuk ponsel */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+    
+    section h2 {
+        font-size: 1.5rem;
+    }
+    
+    button {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
